@@ -1,26 +1,31 @@
 {
-	"name": "sport_daily",
-	"version": "1.0.0",
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"build": "rsbuild build",
-		"dev": "rsbuild dev --open",
-		"preview": "rsbuild preview"
-	},
-	"dependencies": {
-		"@reduxjs/toolkit": "^2.11.0",
-		"react": "^19.2.0",
-		"react-dom": "^19.2.0",
-		"react-redux": "^9.2.0"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "2.3.7",
-		"@rsbuild/core": "^1.6.7",
-		"@rsbuild/plugin-react": "^1.4.2",
-		"@types/react": "^19.2.6",
-		"@types/react-dom": "^19.2.3",
-		"eslint-plugin-unicorn": "^62.0.0",
-		"typescript": "^5.9.3"
-	}
+  "name": "sport_daily",
+  "version": "1.0.0",
+  "description": "Монорепозиторий для проекта Sport Daily.",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend",
+    "build": "npm run build --workspace=frontend",
+    "build:all": "npm run build --workspaces",
+    "install:all": "npm install",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github-personal:EvgenyKalyuk/sport_daily.git"
+  },
+  "keywords": [
+    "monorepo",
+    "sport",
+    "daily"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.10.1"
+  }
 }

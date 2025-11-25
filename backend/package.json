@@ -1,0 +1,14 @@
+{
+	"name": "@sport-daily/backend",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev": "echo \"Backend dev server not configured yet\"",
+		"build": "echo \"Backend build not configured yet\"",
+		"start": "echo \"Backend start not configured yet\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

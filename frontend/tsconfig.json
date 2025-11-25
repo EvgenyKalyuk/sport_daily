@@ -20,8 +20,12 @@
 		"baseUrl": ".",
 		"paths": {
 			"@/*": ["./src/*"],
-			"@/store/*": ["./src/store/*"],
-			"@/components/*": ["./src/components/*"]
+			"@/app/*": ["./src/app/*"],
+			"@/features/*": ["./src/features/*"],
+			"@/shared/*": ["./src/shared/*"],
+			"@/pages/*": ["./src/pages/*"],
+			"@/widgets/*": ["./src/widgets/*"],
+			"@/assets/*": ["./src/assets/*"]
 		},
 
 		/* type checking */

@@ -1,9 +1,15 @@
-# dependencies (bun install)
+# dependencies (npm install)
 node_modules
+package-lock.json
+frontend/node_modules
+backend/node_modules
 
 # output
 out
 dist
+frontend/dist
+frontend/out
+backend/dist
 *.tgz
 
 # code coverage

@@ -1,36 +1,38 @@
-# Rsbuild project
+# Sport Daily
 
-## Setup
+Монорепозиторий для проекта Sport Daily.
 
-Install the dependencies:
+## Структура проекта
 
-```bash
-bun install
+```
+sport_daily/
+├── frontend/     # Frontend приложение (React + Rsbuild)
+├── backend/      # Backend API (в разработке)
+└── .github/      # GitHub Actions workflows
 ```
 
-## Get started
+## Быстрый старт
 
-Start the dev server, and the app will be available at [http://localhost:3000](http://localhost:3000).
-
-```bash
-bun run dev
-```
-
-Build the app for production:
+### Frontend
 
 ```bash
-bun run build
+cd frontend
+npm install
+npm run dev
 ```
 
-Preview the production build locally:
+### Backend
 
 ```bash
-bun run preview
+cd backend
+npm install
+npm run dev
 ```
 
-## Learn more
+## Разработка
 
-To learn more about Rsbuild, check out the following resources:
+Каждая часть проекта (frontend/backend) имеет свои зависимости и скрипты. См. README в соответствующих директориях.
 
-- [Rsbuild documentation](https://rsbuild.rs) - explore Rsbuild features and APIs.
-- [Rsbuild GitHub repository](https://github.com/web-infra-dev/rsbuild) - your feedback and contributions are welcome!
+## CI/CD
+
+GitHub Actions автоматически проверяет код и собирает проект при каждом push и pull request.
