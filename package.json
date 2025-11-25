@@ -9,8 +9,10 @@
 		"preview": "rsbuild preview"
 	},
 	"dependencies": {
+		"@reduxjs/toolkit": "^2.11.0",
 		"react": "^19.2.0",
-		"react-dom": "^19.2.0"
+		"react-dom": "^19.2.0",
+		"react-redux": "^9.2.0"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.7",
