@@ -1,0 +1,59 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.3.7/schema.json",
+	"vcs": { "enabled": true, "clientKind": "git", "useIgnoreFile": true },
+	"files": { "ignoreUnknown": false },
+	"formatter": { "enabled": true, "indentStyle": "tab" },
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"recommended": false,
+			"complexity": {
+				"noForEach": "error",
+				"noStaticOnlyClass": "error",
+				"noUselessSwitchCase": "error",
+				"useDateNow": "error",
+				"useFlatMap": "error",
+				"useIndexOf": "error"
+			},
+			"correctness": { "noInvalidBuiltinInstantiation": "error" },
+			"style": {
+				"noNegationElse": "off",
+				"noNestedTernary": "off",
+				"noSubstr": "error",
+				"useCollapsedIf": "error",
+				"useExplicitLengthCheck": "error",
+				"useForOf": "error",
+				"useNodejsImportProtocol": "error",
+				"useNumberNamespace": "error",
+				"useNumericSeparators": "error",
+				"useThrowNewError": "error",
+				"useTrimStartEnd": "error"
+			},
+			"suspicious": {
+				"noDocumentCookie": "error",
+				"noDoubleEquals": "error",
+				"noThenProperty": "error",
+				"useErrorMessage": "error",
+				"useNumberToFixedDigitsArgument": "error"
+			}
+		}
+	},
+	"javascript": {
+		"formatter": { "quoteStyle": "single" },
+		"globals": ["Global1"]
+	},
+	"overrides": [
+		{
+			"includes": ["tests/**"],
+			"linter": { "rules": { "suspicious": { "noDoubleEquals": "off" } } }
+		},
+		{
+			"includes": ["tests/**"],
+			"linter": { "rules": { "suspicious": { "noDoubleEquals": "off" } } }
+		}
+	],
+	"assist": {
+		"enabled": true,
+		"actions": { "source": { "organizeImports": "on" } }
+	}
+}
